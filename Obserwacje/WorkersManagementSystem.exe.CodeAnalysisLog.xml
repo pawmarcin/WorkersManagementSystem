@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje\WorkersManagementSystem.exe">
+   <Modules>
+    <Module Name="workersmanagementsystem.exe">
+     <Messages>
+      <Message TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Dodaj atrybut AssemblyVersion do elementu 'WorkersManagementSystem.exe'.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="WorkersManagementSystem">
+       <Types>
+        <Type Name="Logowanie1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnZaloguj_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje" File="Logowanie1.h" Line="139">Ciąg zapytania przekazany do elementu 'MySqlCommand::MySqlCommand(String^, MySqlConnection^)' w 'Logowanie1::btnZaloguj_Click(Object^, EventArgs^)' może zawierać następujące zmienne: 'this-&gt;txtUzytkownik-&gt;Text', 'this-&gt;txtHaslo-&gt;Text'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnHZmien_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje" File="Program.h" Line="403">Ciąg zapytania przekazany do elementu 'MySqlCommand::MySqlCommand(String^, MySqlConnection^)' w 'Program::btnHZmien_Click(Object^, EventArgs^)' może zawierać następujące zmienne: 'this-&gt;txtHNowe1-&gt;Text', 'this-&gt;txtHStare-&gt;Text'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPDodaj_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje" File="Program.h" Line="491">Ciąg zapytania przekazany do elementu 'MySqlCommand::CommandText::set(String^)' w 'Program::btnPDodaj_Click(Object^, EventArgs^)' może zawierać następujące zmienne: 'this-&gt;txtPImie-&gt;Text', 'this-&gt;txtPNazwisko-&gt;Text', 'this-&gt;txtPLogin-&gt;Text', 'this-&gt;txtPNumertelefonu-&gt;Text', 'this-&gt;txtPLogin-&gt;Text', 'this-&gt;txtpRola-&gt;Text', 'this-&gt;txtpadres-&gt;Text', 'this-&gt;txtPdatarej-&gt;Text'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPModyfikuj_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje" File="Program.h" Line="534">Ciąg zapytania przekazany do elementu 'MySqlCommand::CommandText::set(String^)' w 'Program::btnPModyfikuj_Click(Object^, EventArgs^)' może zawierać następujące zmienne: 'this-&gt;txtPImie-&gt;Text', 'this-&gt;txtPNazwisko-&gt;Text', 'this-&gt;txtPLogin-&gt;Text', 'this-&gt;txtPNumertelefonu-&gt;Text', 'this-&gt;txtpRola-&gt;Text', 'this-&gt;txtpadres-&gt;Text', 'this-&gt;txtPdatarej-&gt;Text'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPSzukaj_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2022-08-16 23:41:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Pawel\Desktop\ShopBeginning\Dodawanie, usuwanie, modyfikowanie uzytkownikow\Obserwacje" File="Program.h" Line="441">Ciąg zapytania przekazany do elementu 'MySqlCommand::MySqlCommand(String^, MySqlConnection^)' w 'Program::btnPSzukaj_Click(Object^, EventArgs^)' może zawierać następujące zmienne: 'this-&gt;txtPSzukaj-&gt;Text'. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MarkAssembliesWithAssemblyVersion" Category="Microsoft.Design" CheckId="CA1016">
+   <Name>Oznacz zestawy atrybutem AssemblyVersion</Name>
+   <Description>Zestawy powinny używać numerów wersji. Numer wersji jest uznawany za część tożsamości zestawu. Za pomocą atrybutu AssemblyVersion jest realizowana kontrola wersji.</Description>
+   <Resolution Name="Default">Dodaj atrybut AssemblyVersion do elementu {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182155.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Sprawdź zapytania SQL pod kątem luk w zabezpieczeniach</Name>
+   <Description>Ciąg polecenia SQL utworzony na podstawie danych wejściowych użytkownika jest podatny na ataki polegające na wstrzyknięciu kodu SQL. Program Microsoft SQL Server i inne serwery baz danych obsługują procedury składowane i sparametryzowane zapytania SQL, które zmniejszają ryzyko ataków polegających na wstrzyknięciu kodu.</Description>
+   <Resolution Name="WithNonLiterals">Ciąg zapytania przekazany do elementu {0} w {1} może zawierać następujące zmienne: {2}. Jeśli dowolna z tych zmiennych może pochodzić z danych podawanych przez użytkownika, rozważ użycie procedury składowanej lub sparametryzowanego zapytania SQL zamiast tworzenia zapytania przez łączenie ciągów.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategoria</String>
+  <String Key="Certainty">Pewność</String>
+  <String Key="CollapseAll">Zwiń wszystko</String>
+  <String Key="CheckId">Identyfikator testu</String>
+  <String Key="Error">Błąd</String>
+  <String Key="Errors">błędy</String>
+  <String Key="ExpandAll">Rozwiń wszystko</String>
+  <String Key="Help">Pomoc</String>
+  <String Key="Line">Wiersz</String>
+  <String Key="Messages">komunikaty</String>
+  <String Key="LocationNotStoredInPdb">[Lokalizacja nie jest przechowywana w pliku PDB]</String>
+  <String Key="Project">Projekt</String>
+  <String Key="Resolution">Rozwiązanie</String>
+  <String Key="Rule">Reguła</String>
+  <String Key="RuleFile">Plik reguł</String>
+  <String Key="RuleDescription">Opis reguły</String>
+  <String Key="Source">Źródło</String>
+  <String Key="Status">Stan</String>
+  <String Key="Target">Element docelowy</String>
+  <String Key="Warning">Ostrzeżenie</String>
+  <String Key="Warnings">ostrzeżenia</String>
+  <String Key="ReportTitle">Raport rozszerzenia Code Analysis</String>
+ </Localized>
+</FxCopReport>
